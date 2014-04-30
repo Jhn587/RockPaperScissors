@@ -17,6 +17,107 @@ public enum Hand{
 					break;
 					
 					case PAPER:
+					toReturn = 1;
+					break;
+					
+					case SCISSORS:
+					toReturn = -1;
+					break;
+				
+					case SPOCK:
+					toReturn = 1;
+					break;
+				
+					case LIZARD:
+					toReturn = -1;
+					break;
+		
+				}
+				break;
+			//LEFT OFF HERE
+			case PAPER:
+				switch(this){
+					case ROCK:
+					toReturn = -1;
+					break;
+					
+					case PAPER:
+					toReturn = 0;
+					break;
+					
+					case SCISSORS:
+					toReturn = 1;
+					break;
+				
+					case SPOCK:
+					toReturn = -1;
+					break;
+				
+					case LIZARD:
+					toReturn = 1;
+					break;
+		
+				}
+				
+				break;
+				
+			case SCISSORS:
+				switch(this){
+					case ROCK:
+					toReturn = 1;
+					break;
+					
+					case PAPER:
+					toReturn = -1;
+					break;
+					
+					case SCISSORS:
+					toReturn = 0;
+					break;
+				
+					case SPOCK:
+					toReturn = 1;
+					break;
+				
+					case LIZARD:
+					toReturn = -1;
+					break;
+		
+				}
+				break;
+				
+			case SPOCK:
+				switch(this){
+					case ROCK:
+					toReturn = -1;
+					break;
+					
+					case PAPER:
+					toReturn = 1;
+					break;
+					
+					case SCISSORS:
+					toReturn = -1;
+					break;
+				
+					case SPOCK:
+					toReturn = 0;
+					break;
+				
+					case LIZARD:
+					toReturn = 1;
+					break;
+		
+				}
+				break;
+				
+			case LIZARD:
+				switch(this){
+					case ROCK:
+					toReturn = 1;
+					break;
+					
+					case PAPER:
 					toReturn = -1;
 					break;
 					
@@ -29,22 +130,10 @@ public enum Hand{
 					break;
 				
 					case LIZARD:
-					toReturn = -1;
+					toReturn = 0;
 					break;
 		
 				}
-				break;
-			//LEFT OFF HERE
-			case PAPER:
-				break;
-				
-			case SCISSORS:
-				break;
-				
-			case SPOCK:
-				break;
-				
-			case LIZARD:
 				break;
 		
 		}
