@@ -4,10 +4,10 @@ public enum Hand{
 	PAPER,
 	SCISSORS,
 	SPOCK,
-	LIZARD
+	LIZARD;
 	
 	
-	public int compareTo(E other){
+	public int compareTo(Hand other){
 		int toReturn = 0;
 		switch(other){
 			case ROCK:
