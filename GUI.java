@@ -25,6 +25,7 @@ public class GUI {
 		spockButton.addActionListener(this);
 		*/
 		JButton submit = new JButton("Submit Choice");
+		//Add an inner class for the actionListener
 		
 		thePanel.add(rockButton);
 		thePanel.add(paperButton);
