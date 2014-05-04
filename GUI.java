@@ -1,4 +1,5 @@
 import javax.swing.*;
+imprt java.awt.event.ActionEvent;
 
 public class GUI {
 
@@ -26,6 +27,23 @@ public class GUI {
 		*/
 		JButton submit = new JButton("Submit Choice");
 		//Add an inner class for the actionListener
+		submit.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e) {
+				//an action
+				System.out.println(choices.getSelection());
+				if(choices.getSelection().equals(rockButton.getModel())){
+					//make rock hand
+				} else if(choices.getSelection().equals(paperButton.getModel())){
+					//make paper hand
+				} else if(choices.getSelection().equals(scissorButton.getModel())){
+					//make scissor hand
+				} else if(choices.getSelection().equals(lizardButton.getModel())){
+					//make lizard hand
+				} else if(choices.getSelection().equals(spockButton.getModel())){
+					//make spock hand
+				}
+			}
+		});
 		
 		thePanel.add(rockButton);
 		thePanel.add(paperButton);

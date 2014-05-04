@@ -1,4 +1,7 @@
 ToDo
 --------------------
 Submitting button working
+Debugging GUI
+Debugging hand
+
 Figure out storing results
