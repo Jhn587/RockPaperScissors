@@ -1,18 +1,23 @@
 import javax.swing.*;
-imprt java.awt.event.ActionEvent;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class GUI {
 
+	private JFrame mainFrame = new JFrame();
+	private JPanel thePanel = new JPanel();
+	private ButtonGroup choices = new ButtonGroup();
+	private JRadioButton rockButton = new JRadioButton("Rock", true);
+	private JRadioButton paperButton = new JRadioButton("Paper");
+	private JRadioButton scissorButton = new JRadioButton("Scissors");
+	private JRadioButton lizardButton = new JRadioButton("Lizard");
+	private JRadioButton spockButton = new JRadioButton("Spock");
+	
+	
 	public GUI(){
-		JFrame mainFrame = new JFrame();
-		JPanel thePanel = new JPanel();
-		JRadioButton rockButton = new JRadioButton("Rock", true);
-		JRadioButton paperButton = new JRadioButton("Paper");
-		JRadioButton scissorButton = new JRadioButton("Scissors");
-		JRadioButton lizardButton = new JRadioButton("Lizard");
-		JRadioButton spockButton = new JRadioButton("Spock");
 		
-		ButtonGroup choices = new ButtonGroup();
+		
+		
 		choices.add(rockButton);
 		choices.add(paperButton);
 		choices.add(scissorButton);
@@ -27,14 +32,19 @@ public class GUI {
 		*/
 		JButton submit = new JButton("Submit Choice");
 		//Add an inner class for the actionListener
-		submit.addActionListener(new ActionListener(){
+		submit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				//an action
 				System.out.println(choices.getSelection());
 				if(choices.getSelection().equals(rockButton.getModel())){
-					//make rock hand
+					Choice aChoice = new Choice(Hand.ROCK);
 				} else if(choices.getSelection().equals(paperButton.getModel())){
 					//make paper hand
+					//LeftOFFHERE
+					///
+					///LEFT OFF HERE
+					///
+					Choice aChoice = new
 				} else if(choices.getSelection().equals(scissorButton.getModel())){
 					//make scissor hand
 				} else if(choices.getSelection().equals(lizardButton.getModel())){
@@ -44,6 +54,9 @@ public class GUI {
 				}
 			}
 		});
+		
+		
+		
 		
 		thePanel.add(rockButton);
 		thePanel.add(paperButton);
