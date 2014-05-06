@@ -12,7 +12,7 @@ public class GUI {
 	private JRadioButton scissorButton = new JRadioButton("Scissors");
 	private JRadioButton lizardButton = new JRadioButton("Lizard");
 	private JRadioButton spockButton = new JRadioButton("Spock");
-	
+	private Choice userChoice;
 	
 	public GUI(){
 		
@@ -37,21 +37,21 @@ public class GUI {
 				//an action
 				System.out.println(choices.getSelection());
 				if(choices.getSelection().equals(rockButton.getModel())){
-					Choice aChoice = new Choice(Hand.ROCK);
+					userChoice = new Choice(Hand.ROCK);
 				} else if(choices.getSelection().equals(paperButton.getModel())){
-					//make paper hand
-					//LeftOFFHERE
-					///
-					///LEFT OFF HERE
-					///
-					Choice aChoice = new
+					userChoice = new Choice(Hand.PAPER);
+					
 				} else if(choices.getSelection().equals(scissorButton.getModel())){
-					//make scissor hand
+					userChoice = new Choice(Hand.SCISSORS);
 				} else if(choices.getSelection().equals(lizardButton.getModel())){
-					//make lizard hand
+					
+					userChoice = new Choice(Hand.LIZARD);
 				} else if(choices.getSelection().equals(spockButton.getModel())){
-					//make spock hand
+					userChoice = new Choice(Hand.SPOCK);
 				}
+				
+				Choice test = new Choice(Hand.SPOCK);
+				System.out.println(" vs SPOCK " + userChoice.compareTo(test));
 			}
 		});
 		
@@ -70,6 +70,8 @@ public class GUI {
 		mainFrame.setSize(300,300);
 		mainFrame.setVisible(true);
 		mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		
 		
 	}
 	
