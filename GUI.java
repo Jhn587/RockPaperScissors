@@ -35,7 +35,7 @@ public class GUI {
 		submit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				//an action
-				System.out.println(choices.getSelection());
+				
 				if(choices.getSelection().equals(rockButton.getModel())){
 					userChoice = new Choice(Hand.ROCK);
 				} else if(choices.getSelection().equals(paperButton.getModel())){
@@ -52,6 +52,14 @@ public class GUI {
 				
 				Choice test = new Choice(Hand.SPOCK);
 				System.out.println(" vs SPOCK " + userChoice.compareTo(test));
+				Random aRandom = new Random();
+				if( userChoice.compareTo(cpuChoice)>0){
+				
+				}else if(userChoice.compareTo(cpuChoice)<0){
+				
+				}else {
+				//they are equal
+				}
 			}
 		});
 		

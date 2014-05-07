@@ -3,5 +3,7 @@ ToDo
 Submitting button working
 Debugging GUI
 Debugging hand
+Figure out the rest of this program
+add tie to scoreboard
+finish random generator
 
-Figure out storing results
