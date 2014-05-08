@@ -13,6 +13,8 @@ public class GUI {
 	private JRadioButton lizardButton = new JRadioButton("Lizard");
 	private JRadioButton spockButton = new JRadioButton("Spock");
 	private Choice userChoice;
+	private ScoreBoard theScore = new ScoreBoard();
+	
 	
 	public GUI(){
 		
@@ -50,15 +52,20 @@ public class GUI {
 					userChoice = new Choice(Hand.SPOCK);
 				}
 				
-				Choice test = new Choice(Hand.SPOCK);
-				System.out.println(" vs SPOCK " + userChoice.compareTo(test));
 				Random aRandom = new Random();
+				Choice cpuChoice = new Choice(aRandom.nextInt(6));
+				System.out.println(userChoice+" vs " +cpuChoice+ " = " + userChoice.compareTo(cpuChoice));
+				
 				if( userChoice.compareTo(cpuChoice)>0){
-				
+					this.theScore.userWins();
+					//pop up window
 				}else if(userChoice.compareTo(cpuChoice)<0){
-				
+					this.theScore.cpuWins();
+					//pop up window
 				}else {
 				//they are equal
+					this.theScore.theyTie();
+					//popup window
 				}
 			}
 		});

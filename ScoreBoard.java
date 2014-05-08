@@ -2,6 +2,7 @@ public class ScoreBoard{
 
 	private int cpuWins = 0;
 	private int userWins = 0;
+	private int theyTie = 0;
 	private int gamesPlayed = 0;
 	
 	public ScoreBoard(){
@@ -15,6 +16,11 @@ public class ScoreBoard{
 	
 	public int cpuWins(){
 		this.cpuWins++;
+		this.gamesPlayed++;
+	}
+	
+	public int theyTie(){
+		this.theyTie++;
 		this.gamesPlayed++;
 	}
 	

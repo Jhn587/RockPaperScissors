@@ -4,6 +4,8 @@ Submitting button working
 Debugging GUI
 Debugging hand
 Figure out the rest of this program
-add tie to scoreboard
-finish random generator
 
+finish random generator
+popup message showing winner
+button that displays total stats
+toString for choice/hand

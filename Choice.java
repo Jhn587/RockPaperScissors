@@ -166,6 +166,9 @@ public class Choice implements Comparable{
 	
 	}
 
-
+	public String toString(){
+		return this.aHand.toString();
+	
+	}
 
 }
