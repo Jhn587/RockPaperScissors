@@ -9,17 +9,17 @@ public class ScoreBoard{
 	
 	}
 	
-	public int userWins(){
+	public void userWins(){
 		this.userWins++;
 		this.gamesPlayed++;
 	}
 	
-	public int cpuWins(){
+	public void cpuWins(){
 		this.cpuWins++;
 		this.gamesPlayed++;
 	}
 	
-	public int theyTie(){
+	public void theyTie(){
 		this.theyTie++;
 		this.gamesPlayed++;
 	}

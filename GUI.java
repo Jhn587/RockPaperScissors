@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Random;
 
 public class GUI {
 
@@ -53,18 +54,20 @@ public class GUI {
 				}
 				
 				Random aRandom = new Random();
-				Choice cpuChoice = new Choice(aRandom.nextInt(6));
+				int seed = aRandom.nextInt(5);
+				Choice cpuChoice = new Choice(Hand.values()[seed]);
 				System.out.println(userChoice+" vs " +cpuChoice+ " = " + userChoice.compareTo(cpuChoice));
 				
 				if( userChoice.compareTo(cpuChoice)>0){
-					this.theScore.userWins();
+					theScore.userWins();
 					//pop up window
+					
 				}else if(userChoice.compareTo(cpuChoice)<0){
-					this.theScore.cpuWins();
+					theScore.cpuWins();
 					//pop up window
 				}else {
 				//they are equal
-					this.theScore.theyTie();
+					theScore.theyTie();
 					//popup window
 				}
 			}
