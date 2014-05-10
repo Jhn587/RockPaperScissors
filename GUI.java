@@ -15,6 +15,10 @@ public class GUI {
 	private JRadioButton spockButton = new JRadioButton("Spock");
 	private Choice userChoice;
 	private ScoreBoard theScore = new ScoreBoard();
+	private JLabel userWins = new JLabel();
+	private JLabel cpuWins = new JLabel();
+	private JLabel numberOfTies = new JLabel();
+	private JLabel totalGamesPlayed = new JLabel();
 	
 	
 	public GUI(){
